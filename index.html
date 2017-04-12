@@ -1,85 +1,240 @@
 <!DOCTYPE html>
 <head>
-	<title>My Google homepage</title>
+	<title>Google</title>
+  <link rel="icon" type="image/png" href="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
 	<style>
 
 	body{
 		-webkit-appearance: none;
 		-moz-appearance: none;
 	}
+
+
+div{
+  border:none;
+}
 		
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+#navDown {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 980px;
 }
 
-li {
+
+
+
+.navUp{
+  
+  height:50px;
+  width:100%;
+  
+  
+}
+
+.navUplinks{
+
+  float:right;
+  margin-right: 16px;
+  margin-top:10px;
+  font-size:13px;
+  font-family: Arial;
+}
+.navUplinks:hover{
+  text-decoration: underline;
+}
+
+form input{
+  width:580px;
+  margin-left: 440px;
+  padding: 12px;
+  box-sizing: border-box;
+  border:1px solid #B2B3B0;
+  box-shadow: 1px 1px 5px #888;
+}
+
+.bright {
+    float: right;
+    white-space: nowrap;
+        margin-right: 30px;
+    font-size: small;
+
+}
+
+.bleft {
     float: left;
+    white-space: nowrap;
+        margin-right: 30px;
+    font-size: small;
+
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.searchleft{
+  margin-left:580px;
+  width:125px;
+  height:35px;
+  font-size:13px;
+  font-family:Arial;
+  border:none;
+  color:#626361;
+  font-weight:600;
+  background-color: #f2f4f0;
 }
 
-li a:hover:not(.active) {
-    background-color: #f3f3f3;
+.searchleft:hover{
+  box-shadow: 1px 1px 5px #888888;
+  color:black;
+  border:1px solid #B2B3B0;
+}
+.searchright{
+  width:145px;
+  height:35px;
+  font-size: 13px;
+  font-family:Arial;
+  color:#626361  ;
+  border:none;
+  font-weight:600;
+  background-color: #f2f4f0;
+  margin-left:4px;
+}
+
+.searchright:hover{
+  box-shadow: 1px 1px 5px #888888;
+  color:black;
+  border:1px solid #B2B3B0;
+}
+
+
+
+.navDown{
+  height:35px;
+  width:100%;
+  border:1px #f2f4f0 solid;
+  background-color:#f2f4f0;
+  position:fixed;
+  bottom:0;
+  left:0;
+}
+
+
+
+.bleft{
+  
+  width:270px;
+  float:left;
+
+}
+
+.bright{
+  
+  width:370px;
+  float:right;
+}
+
+ul{
+  list-style-type: None;
+  margin:0;
+  margin-top:8px;
+  padding:0;
+}
+
+li{
+  display:inline;
+  font-family:Arial;
+  font-size:13px;
+  margin:15px;
+  color:#626361;
+
+}
+
+li:hover{
+  text-decoration:underline;
+}
+
+
+.logo{
+  width:278px;
+  margin: 149px 20px 10px 585px;
 }
 
 .logo-subtext {
     color: #4285f4;
     font: 16px/16px roboto-regular, arial, sans-serif;
     left: 215px;
-    position: relative;
     top: 76px;
     white-space: nowrap;
 }
+.break{
 
-.active {
-    background-color: #4CAF50;
 }
-	#hplogo {
-    background: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png') no-repeat;
-}
-
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
 	</style>
+
 </head>
 	<body>
-		<header>
-			<ul>
-  <li><a class="active" href="#">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Help</a></li>
-  <li><a href="#">Contact</a></li>
-</ul>
+      <!--navUp -->
+
+      
+		<header class="navUp">
 			
-		</header>
-<div style="background-size:272px 92px;height:92px;width:272px" title="Google" align="left" id="hplogo" onload="window.lol&amp;&amp;lol()"><div class="logo-subtext">Ghana</div></div>
-	<form>
+      <!--navUp -->
+
+      <ul class="navUplinks">
+  <li>Gmail</li>
+  <li>Images</li>
+  <li>Youtube</li>
+  <li>Account</li>
+</ul>
+		  </header>
+
+
+      <!--Google logo -->
+      <section>
+     <div> <img class="logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" />
+  <span class="logo-subtext">Ghana</span>
+</div>
+	 </section>
+      
+      <!--searchBar -->
+<div class="searchBar">
+      <form>
 		<input type="text" name="keyword" placeholder="Type your keyword here">
-  <input type="submit">
 	</form>
-		<footer>
-			<ul>
-  <li><a class="active" href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
+  </div>
+
+		
+  
+      <!-- searchButtons-->
+<div class="break" style="padding-top:18px">
+      
+  <div class="searchButtons">
+  <button class="searchleft">Google search</button>
+  <button class="searchright">I'm felling lucky</button>
+  </div>
+
+  </div>
+        
+        <!-- test-->
+
+      
+      
+      <!-- navDown-->
+
+      <footer class="navDown">
+			
+      <!-- link on the left of navbar-->
+        
+      <ul class="bleft">
+  <li>Advertising</li>
+  <li>Business</li>
+  <li>About</li>
+</ul>
+      <!--bright -->
+
+      <ul class="bright">
+  <li>Privacy</li>
+  <li>Terms</li>
+  <li>Settings</li>
+  <li>Use Google.com</li>
 </ul>
 		</footer>
 
